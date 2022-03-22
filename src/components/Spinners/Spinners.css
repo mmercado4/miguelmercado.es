@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.spinner-container {
+  height: 400px;
+  width: 100%;
+  background-color: #ffd93d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .spinner-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .spinner-container {
+    width: 33%;
+  }
+}
+
+.first-spinner {
+  font-family: "Bungee", cursive;
+  font-size: 2em;
+}
+
+.first-spinner p {
+  margin: 0;
+  padding: 0;
+  color: #ff6b6b;
+}
+
+.first-spinner p span {
+  opacity: 0;
+  animation: dot-animation 3s linear infinite;
+  animation-delay: calc(var(--i) * 0.5s);
+}
+
+.first-spinner p svg {
+  margin-right: 10px;
+}
+
+@keyframes dot-animation {
+  0%,
+  49% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
