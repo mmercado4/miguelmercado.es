@@ -1,13 +1,22 @@
 import React, { Fragment } from "react";
-import FirstSpinner from "./FirstSpinner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 import "./Spinners.css";
 
 const Spinners = () => {
   return (
     <Fragment>
-      <h1>Spinners</h1>
       <main>
-        <FirstSpinner />
+        <div className="spinner-container">
+          <div className="first-spinner">
+            <p>
+              <FontAwesomeIcon icon={faGamepad} />
+              Loading<span style={{ "--i": "0" }}>.</span>
+              <span style={{ "--i": "1" }}>.</span>
+              <span style={{ "--i": "2" }}>.</span>
+            </p>
+          </div>
+        </div>
       </main>
     </Fragment>
   );
