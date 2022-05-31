@@ -11,7 +11,8 @@ const Spinners = () => {
           <div className="first-spinner">
             <p>
               <FontAwesomeIcon icon={faGamepad} />
-              Loading<span style={{ "--i": "0" }}>.</span>
+              Comming soon
+              <span style={{ "--i": "0" }}>.</span>
               <span style={{ "--i": "1" }}>.</span>
               <span style={{ "--i": "2" }}>.</span>
             </p>
